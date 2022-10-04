@@ -1,0 +1,29 @@
+name: crc1211-tw2022
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - numpy
+  - pandas
+  - dask
+  - xarray
+  - xarray-simlab=0.5.0
+  - netcdf4
+  - fastscapelib-f2py=2.8.2
+  - fastscape=0.1.0beta3
+  - ipyfastscape=0.2.0
+  - jupyterlab=3
+  - ipykernel
+  - ipython=7.10
+  - matplotlib-base
+  - graphviz
+  - python-graphviz
+  - numba
+  - ipywidgets
+  - hvplot=0.7.0
+  - zarr
+  - tqdm
+  - scipy
+  - pip
+  - pip:
+      - ./adascape-0.1.0b0.tar.gz
