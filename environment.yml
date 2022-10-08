@@ -14,7 +14,7 @@ dependencies:
   - ipyfastscape=0.2.0
   - jupyterlab=3
   - ipykernel
-  - ipython=7.10
+  - ipython
   - matplotlib-base
   - graphviz
   - python-graphviz
