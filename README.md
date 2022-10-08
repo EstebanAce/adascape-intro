@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/EstebanAce/crc1211-tw2022/master?urlpath=lab)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/EstebanAce/crc1211-tw2022/main?urlpath=lab)
 [![Test notebooks](https://github.com/EstebanAce/crc1211-tw2022/workflows/Test%20notebooks/badge.svg)](https://github.com/EstebanAce/crc1211-tw2022/actions)
 
 # Modelling biological diversity in a geological context
@@ -26,7 +26,7 @@ You can run the notebooks in your browser without installing anything thanks to
 "launch binder" badge above and it will launch remotely a new notebook server
 for you:
 
-- [Run on binder](https://mybinder.org/v2/gh/EstebanAce/crc1211-tw2022/master?urlpath=lab)
+- [Run on binder](https://mybinder.org/v2/gh/EstebanAce/crc1211-tw2022/main?urlpath=lab)
 
 This service is for demo purpose only, do not rely on it for doing more serious
 work.
