@@ -3,7 +3,7 @@ name: Test build docker image
 on:
   pull_request:
     branches:
-    - main
+    - master
 
 jobs:
   test-build-docker-image:

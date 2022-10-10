@@ -3,7 +3,7 @@ name: Build image on Binder
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   create-binder-cache:
