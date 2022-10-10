@@ -16,5 +16,5 @@ jobs:
       with:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-        IMAGE_NAME: EstebanAce/${{ github.event.repository.name }}
+        IMAGE_NAME: fastscape/${{ github.event.repository.name }}
         PUBLIC_REGISTRY_CHECK: true
