@@ -14,7 +14,6 @@ with the help of [Benoît Bovy](https://github.com/benbovy).
 
 - [How to run the notebooks?](#how-to-run-the-notebooks)
     - [Run in the cloud (Binder)](#run-in-the-cloud-binder)
-    - [Install and run locally (Docker)](#install-and-run-locally-docker)
     - [Install and run locally (Conda)](#install-and-run-locally-conda)
     
 ## How to run the notebooks?
@@ -30,75 +29,6 @@ for you:
 
 This service is for demo purpose only, do not rely on it for doing more serious
 work.
-
-### Install and run locally (Docker)
-[Docker](https://www.docker.com/) images are built automatically for this
-repository. Those images provide the whole computing environment, pre-installed
-and pre-configured for running the notebooks. The only requirement is to
-have Docker installed on your machine. It is available on all platforms
-Linux/Windows/Mac and it can be installed from the Docker website or using one
-of your platform's package managers.
-
-First install and run docker. Then open a terminal and 
-run the command below to first pull the latest image 
-with the course material:
-
-```bash
-$ docker pull EstebanAce/crc1211-tw2022:latest
-```
-
-Then run the command below to start the Jupyterlab application from the Docker
-container. Replace `crc1211-tw2022` by any other name you want to
-give to your local container (optional). Also Replace
-`/path/to/local-notebook-folder` by the full path to the directory on your
-machine where you want to create/copy, edit and permanently store notebooks for
-this training course.
-
-```bash
-$ docker run \
-    -it \
-    --name crc1211-tw2022 \
-    -p 8888:8888 \
-    -v /path/to/local-notebook-folder:/home/jovyan/my-local-folder \
-    fastscape/crc1211-tw2022 \
-    jupyter lab --ip 0.0.0.0
-```
-
-You can then enter in your browser the url and token provided to start using the
-Jupyterlab application.
-
-You may want to copy the `notebooks` folder in your local working folder mounted
-in the docker container as `my-local-folder`. Open a terminal in Jupyterlab and
-run the following command:
-
-```bash
-$ cp -R notebooks my-local-folder/
-```
-
-When you are done you can stop and remove the container:
-
-``` bash
-$ docker stop crc1211-tw2022
-$ docker rm crc1211-tw2022
-```
-
-#### Troubleshooting
-
-*The url I entered in my browser doesn't point to Jupyterlab*
-
-You may already have another application running on localhost using the port
-`8888`. Try another port when running the `docker run` command above, e.g.,
-using `-p 8889:8888`. You also need to change the port in the entered url
-accordingly (e.g., `localhost:8889`).
-
-*The url I entered in my browser gives a page asking for a token*
-
-Copy and paste the token given in the url. If the token is invalid, you may have
-another Jupyterlab application already running on your machine. Try using
-another port as described above.
-
-Check [Docker's documentation](https://docs.docker.com/) for additional command
-line help and options.
 
 ### Install and run locally (Conda)
 Assuming that you have `git` and [conda](https://conda.io/docs/index.html)
