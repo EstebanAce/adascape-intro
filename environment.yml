@@ -1,4 +1,4 @@
-name: crc1211-tw2022
+name: adascape-intro
 channels:
   - conda-forge
 dependencies:

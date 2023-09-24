@@ -1,5 +1,5 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/EstebanAce/crc1211-tw2022/main?urlpath=lab)
-[![Test notebooks](https://github.com/EstebanAce/crc1211-tw2022/workflows/Test%20notebooks/badge.svg)](https://github.com/EstebanAce/crc1211-tw2022/actions)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/EstebanAce/adascape-intro/main?urlpath=lab)
+[![Test notebooks](https://github.com/EstebanAce/adascape-intro/workflows/Test%20notebooks/badge.svg)](https://github.com/EstebanAce/adascape-intro/actions)
 
 # Modelling biological diversity in a geological context
 
@@ -36,10 +36,10 @@ installed, you can install all the packages required to run the notebooks in a
 new conda environment using the following commands:
 
 ```bash
-$ git clone https://github.com/EstebanAce/crc1211-tw2022
-$ cd crc1211-tw2022
+$ git clone https://github.com/EstebanAce/adascape-intro
+$ cd adascape-intro
 $ conda env create -f environment.yml
-$ conda activate crc1211-tw2022
+$ conda activate adascape-intro
 ```
 
 Note: you could use [mamba](https://github.com/mamba-org/mamba) instead of
@@ -76,7 +76,7 @@ A few extra steps are required to prepare your contributions. You can first
 update the conda environment using the following command:
 
 ```bash
-$ conda env update -n crc1211-tw2022 --file environment-dev.yml 
+$ conda env update -n adascape-intro --file environment-dev.yml 
 ```
 
 This installs a few additional packages like
