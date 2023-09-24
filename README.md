@@ -4,11 +4,11 @@
 # Modelling biological diversity in a geological context
 
 This repository contains a collection of [Jupyter](http://jupyter.org/)
-notebooks to introduce two adaptive speciation models coupled with 
-the landscape evolution model [Fastscape](https://github.com/fastscape-lem).
-This short course is part of the [CRC 1211 Training Week 2022](https://sfb1211.uni-koeln.de/index.php/irtg/tw-2022) 
-and builds on a previous [short-course]((https://github.com/fastscape-lem/crc-1211-short-course)) 
-on the landscape evolution modelling framework Fastscape
+notebooks to introduce [AdaScape](https://github.com/fastscape-lem/adascape), 
+a coupled adaptive speciation and  landscape evolution model build into the [FastScape Framework](https://github.com/fastscape-lem).
+This short course war part of the [CRC 1211 Training Week 2022](https://sfb1211.uni-koeln.de/index.php/irtg/tw-2022) 
+and San Pedro de Atacama field school. It builds on a previous course [short-course]((https://github.com/fastscape-lem/crc-1211-short-course)) 
+on the landscape evolution modelling framework FastScape
 for the CRC-1211 taught by [Jean Braun](https://github.com/jeanbraun) 
 with the help of [Benoît Bovy](https://github.com/benbovy).
 

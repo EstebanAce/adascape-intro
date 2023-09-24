@@ -26,4 +26,5 @@ dependencies:
   - scipy
   - pip
   - pip:
-      - ./adascape-0.1.0b0.tar.gz
+      - 'git+https://github.com/fastscape-lem/adascape.git'
+      - 'git+https://github.com/fastscape-lem/orographic-precipitation.git'

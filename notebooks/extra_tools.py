@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 from scipy.optimize import curve_fit
+import xarray as xr
 
 
 def get_dataframe(ds, out_vars=['life__taxon_id', 'life__ancestor_id', 'life__trait_elev', 'life__y', 'life__x']):
@@ -64,3 +65,32 @@ def fit_nlsq(xdata, ydata, xmin, xmax, var_name):
     popt, pcov = curve_fit(quad_func, xdata, ydata)
     xfit = np.linspace(xmin, xmax, 1000)
     return pd.DataFrame({var_name: xfit, 'taxon_richness': quad_func(xfit, *popt)})
+
+
+def plot_topo_taxa(ds, dtf, time_sel):
+    """
+    Function to plot the spatial distribution of taxa, where the taxa are depicted with different markers and
+    colors.
+
+    Parameters
+    ----------
+     ds: xr.Dataset
+             with results of the eco-evo model
+     dtf: pd.DataFrame
+         with results of the eco-evo model
+     time_sel: array-like
+               with time steps to plot the results
+    """
+    mkrs = ['.', 'o', 'v', '^', '<', '>', '1', '2', '3', '4', '8',
+            's', 'p', '*', '+', 'h', 'H', 'D', 'd', 'P', 'X',
+            0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    fig1 = (ds
+            .sel(out=time_sel)
+            .topography__elevation.plot(col='out', col_wrap=2, figsize=(8, 8), cmap='bone')
+            )
+
+    for ax1, t in zip(fig1.axes.ravel(), time_sel):
+        pop = dtf[dtf.out == t].groupby('taxon_id')
+        max_no_grp = max(list(pop.groups.keys()))
+        for k, v in pop:
+            ax1.scatter(v.x, v.y, marker=mkrs[int(max_no_grp - k)], s=20)
