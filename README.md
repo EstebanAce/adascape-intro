@@ -5,9 +5,10 @@
 
 This repository contains a collection of [Jupyter](http://jupyter.org/)
 notebooks to introduce [AdaScape](https://github.com/fastscape-lem/adascape), 
-a coupled adaptive speciation and  landscape evolution model build into the [FastScape Framework](https://github.com/fastscape-lem).
-This short course war part of the [CRC 1211 Training Week 2022](https://sfb1211.uni-koeln.de/index.php/irtg/tw-2022) 
-and San Pedro de Atacama field school. It builds on a previous course [short-course]((https://github.com/fastscape-lem/crc-1211-short-course)) 
+a coupled adaptive speciation with a landscape evolution model built into the [FastScape Framework](https://github.com/fastscape-lem).
+This short course was part of the [CRC 1211 Training Week 2022](https://sfb1211.uni-koeln.de/index.php/irtg/tw-2022) 
+and [San Pedro de Atacama field school](https://sfb1211.uni-koeln.de/index.php/14-news/latest/233-international-field-school-on-biodiversity-genomics-at-the-dry-limit-september-2023). 
+This introduction builds on a previous [short course]((https://github.com/fastscape-lem/crc-1211-short-course)) 
 on the landscape evolution modelling framework FastScape
 for the CRC-1211 taught by [Jean Braun](https://github.com/jeanbraun) 
 with the help of [Benoît Bovy](https://github.com/benbovy).
@@ -27,7 +28,7 @@ for you:
 
 - [Run on binder](https://mybinder.org/v2/gh/EstebanAce/crc1211-tw2022/main?urlpath=lab)
 
-This service is for demo purpose only, do not rely on it for doing more serious
+This service is for demo purposes only, do not rely on it for doing more serious
 work.
 
 ### Install and run locally (Conda)
@@ -60,7 +61,7 @@ to:
 $ CONDA_SUBDIR=osx-64 conda env create -f environment.yml
 ```
 
-Finally run the command below to start the Jupyterlab application. It should
+Finally, run the command below to start the Jupyterlab application. It should
 open a new tab in your browser.
 
 ```bash
@@ -69,7 +70,7 @@ $ jupyter lab
 
 ## How to contribute?
 
-Your contribution is welcome! Your can do so by reporting issues, suggesting new
+Your contribution is welcome! You can do so by reporting issues, suggesting new
 notebook examples or improvements to the current examples.
 
 A few extra steps are required to prepare your contributions. You can first
